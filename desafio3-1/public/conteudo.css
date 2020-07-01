@@ -1,0 +1,221 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
+
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header {
+    padding: 30px 20px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.content {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    margin: 90px 30px;
+    
+}
+
+.content .cursos{
+    height: 80vh;
+    padding: 50px;
+    text-align: center;
+    border-radius: 9px;
+    background-color: #141313;
+    cursor: pointer;
+
+    width: 67%;
+
+    transition: 200ms;
+}
+
+.content .starter:hover {
+    border: 2px solid #7159c1;
+}
+
+.content .launchbase:hover {
+    border: 2px solid #FFA500;
+}
+
+/* .content .gostack:hover {
+    border: 2px solid #32CD32;
+} */
+
+.content .curso__image {
+    margin: 100px auto;
+}
+
+
+
+.content .curso__info {
+   margin-bottom: 80px;
+   font-size: 16px;
+   line-height: 26px;
+
+}
+
+.content .cursos .curso__info .addstarter {
+    color: #7159c1;
+}
+
+.content .cursos .curso__info .addlaunchbase {
+    color: #FFA500;
+}
+
+.content .cursos .curso__info .addgostack {
+    color: #32CD32;
+}
+
+.content .cursos .botao__gostack {
+    border-radius: 9px;
+    padding: 15px;
+    background-color:#32cd32;
+    color: black;
+
+    width: 90%;
+
+    transition: 400ms;
+}
+
+.content .cursos .botao__gostack:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid #32cd32;
+}
+
+/* ==========  Modal =========== */
+.modal-overlayStarter, 
+.modal-overlayLaunchBase  {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #1C1C1C;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal,
+.modal .close-modal2 {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* ==========  Modal Atctive=========== */
+.modal-overlayStarter.active,
+.modal-overlayLaunchBase.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%
+}
+ .modal-contentStarter,
+ .modal-contentLaunchBase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    margin: 80px auto;
+
+     text-align: center;
+
+     position: absolute;
+     
+ }
+
+.content-conteud {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ .content-conteud h2 {
+     margin-bottom: 80px;
+ }
+
+ .content-conteud h2, ul{
+     margin-bottom: 25px;
+ }
+
+ .content-conteud ul li {
+     list-style: none;
+ }
+
+ .content-conteud .botao {
+     text-decoration: none;
+     color: white;
+     border-radius: 9px;
+     background-color: #7159c1;
+    
+     padding: 15px;
+
+     width: 50%;
+     cursor: pointer;
+
+     margin-top: 20%;
+     margin-left: 25%;
+
+     transition: 300ms;
+ }
+
+ .content-conteud .botao:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid #8A2BE2;
+}
+
+.content-conteud .botao2 {
+    text-decoration: none;
+    color: black;
+    border-radius: 9px;
+    background-color: #FFA500;
+   
+    padding: 15px;
+
+    width: 50%;
+    cursor: pointer;
+
+    margin-top: 20%;
+    margin-left: 25%;
+
+    transition: 300ms;
+}
+
+.content-conteud .botao2:hover {
+   background-color: black;
+   color: white;
+   border: 3px solid #FFA500;
+}
+
+
+
+.content-img {
+    margin: 100px auto;
+}

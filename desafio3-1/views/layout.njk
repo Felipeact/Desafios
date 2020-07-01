@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <title>Document</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/sobre.css">
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="links">
+            {%block link %}
+            {% endblock %}
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>
